@@ -1,0 +1,79 @@
+.trails-section {
+  padding-top: 48px;
+  padding-bottom: 48px;
+
+  @include media(desktop) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+.trails-content-wrapper {
+  @include media(desktop) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+  }
+}
+
+.trails-img {
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    margin-bottom: 0;
+  }
+}
+
+.trails-text-wrapper {
+  @include media(desktop) {
+    max-width: 678px;
+  }
+}
+
+.trails-text {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  text-align: center;
+  color: #3e3a36;
+  margin-bottom: 30px;
+
+  @include media(desktop) {
+    text-align: left;
+    margin-bottom: 30px;
+  }
+}
+
+.trails-list {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 12px;
+
+  @include media(desktop) {
+  }
+}
+
+.trails-list-item {
+  display: flex;
+  gap: 12px;
+
+  @include media(desktop) {
+  }
+}
+
+.check-icon {
+  min-width: 24px;
+}
+
+.trails-item-text {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #3e3a36;
+
+  @include media(desktop) {
+    font-size: 16px;
+  }
+}

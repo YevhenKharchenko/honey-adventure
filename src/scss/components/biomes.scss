@@ -1,4 +1,4 @@
-.about-section {
+.biomes-section {
   padding-top: 48px;
   padding-bottom: 48px;
 
@@ -8,7 +8,7 @@
   }
 }
 
-.about-text {
+.biomes-text {
   font-family: 'Manrope', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -18,45 +18,57 @@
 
   @include media(desktop) {
     font-size: 20px;
-    max-width: 1142px;
+    max-width: 1062px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 40px;
   }
 }
 
-.about-list {
+.biomes-list {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px;
+  gap: 16px;
 
   @include media(desktop) {
     flex-direction: row;
     justify-content: center;
-    gap: 36.7px;
+    gap: 39px;
   }
 }
 
-.about-list-item {
-  background: #516c3d;
-  border-radius: 8px;
-  padding: 16px;
+.biomes-list-item {
+  border: 1px solid #3e3a36;
+  border-radius: 12px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
 
   @include media(desktop) {
-    max-width: 250px;
+    max-width: 224px;
+    min-height: 328px;
   }
 }
 
-.about-item-text {
+.biomes-item-title {
+  font-family: 'Chonburi', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+  color: #3e3a36;
+}
+
+.biomes-item-text {
   font-family: 'Manrope', sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 13px;
   text-align: center;
-  color: #fffdf7;
+  color: #3e3a36;
 
   @include media(desktop) {
     font-size: 16px;
-    text-align: left;
   }
 }

@@ -1,0 +1,84 @@
+.journal-section {
+  padding-top: 48px;
+  padding-bottom: 48px;
+
+  @include media(desktop) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+.journal-content-wrapper {
+  background: #3e3a36;
+  border-radius: 12px;
+  padding: 16px;
+
+  @include media(desktop) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    padding: 16px 46px;
+  }
+}
+
+.journal-text {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.4;
+  text-align: center;
+  color: #fffdf7;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    max-width: 401px;
+    font-size: 20px;
+    line-height: 1.4;
+    text-align: left;
+    margin-bottom: 0;
+  }
+}
+
+.journal-list-wrapper {
+}
+
+.journal-list-text {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #fffdf7;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}
+
+.journal-list {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 16px;
+}
+
+.journal-list-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.honeybee-icon {
+  min-width: 24px;
+}
+
+.journal-item-text {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #fffdf7;
+
+  @include media(desktop) {
+    font-size: 16px;
+  }
+}
