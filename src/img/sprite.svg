@@ -39,5 +39,8 @@
       <path fill="none" stroke="#f4c05d" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.667" d="M16 17.333a4 4 0 1 0 0-8 4 4 0 0 0 0 8z" style="stroke:var(--color3, #f4c05d)"/>
       <path fill="none" stroke="#f4c05d" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.667" d="M16 2.667A10.666 10.666 0 0 0 5.334 13.333c0 2.523.536 4.173 2 6l8.667 10 8.667-10c1.464-1.827 2-3.477 2-6A10.666 10.666 0 0 0 16.001 2.667z" style="stroke:var(--color3, #f4c05d)"/>
     </symbol>
+    <symbol id="icon-back-arrow" viewBox="0 0 24 24" fill="none">
+      <path d="M16 19.5L8 12L16 4.5" stroke="#3E3A36" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
   </defs>
 </svg>

@@ -1,0 +1,49 @@
+.reviews-section {
+  padding-top: 48px;
+  padding-bottom: 48px;
+
+  @include media(desktop) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+.reviews-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    justify-content: center;
+    gap: 22px;
+  }
+}
+
+.reviews-list-item {
+  background: #516c3d;
+  border-radius: 8px;
+  padding: 12px;
+
+  @include media(desktop) {
+    max-width: 194px;
+    min-height: 164px;
+  }
+}
+
+.reviews-item-text {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  color: #fffdf7;
+  margin-bottom: 12px;
+}
+
+.reviews-item-name {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  text-align: right;
+  color: #fffdf7;
+}

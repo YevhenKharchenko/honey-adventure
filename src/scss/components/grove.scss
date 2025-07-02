@@ -1,0 +1,77 @@
+.grove-section {
+  padding-top: 48px;
+  padding-bottom: 48px;
+
+  @include media(desktop) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+.grove-content-wrapper {
+  @include media(desktop) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+  }
+}
+
+.grove-img {
+  margin-bottom: 24px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    margin: 0;
+  }
+}
+
+.grove-text-wrapper {
+  @include media(desktop) {
+    max-width: 923px;
+  }
+}
+
+.grove-text {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #3e3a36;
+  text-align: center;
+  margin-bottom: 30px;
+
+  @include media(desktop) {
+    font-weight: 300;
+    font-size: 16px;
+    text-align: left;
+  }
+}
+
+.grove-list {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 12px;
+}
+
+.grove-list-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.check-icon {
+  min-width: 24px;
+}
+
+.grove-item-text {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  color: #3e3a36;
+
+  @include media(desktop) {
+    font-size: 14px;
+  }
+}

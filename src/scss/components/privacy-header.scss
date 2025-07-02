@@ -1,28 +1,30 @@
 .privacy-header {
-  background: #0f172a;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  background: #fffdf7;
+  padding-top: 12px;
+  padding-bottom: 12px;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 10;
 
   @include media(desktop) {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 }
 
 .privacy-header-link {
   display: flex;
   align-items: center;
-  gap: 8px;
-  font-family: 'Space Grotesk', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  color: #f1f5f9;
+  gap: 12px;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  color: #3e3a36;
+}
 
-  @include media(desktop) {
-    font-size: 24px;
-  }
+.arrow-back-icon {
+  stroke: #3e3a36;
 }

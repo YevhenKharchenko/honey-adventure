@@ -1,0 +1,54 @@
+.philosophy-section {
+  padding-top: 48px;
+  padding-bottom: 48px;
+
+  @include media(desktop) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+.philosophy-content-wrapper {
+  background: #516c3d;
+  border-radius: 12px;
+  padding: 16px;
+
+  @include media(desktop) {
+    padding: 16px 46px;
+  }
+}
+
+.philosophy-top-text {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  text-align: center;
+  color: #fffdf7;
+  margin-bottom: 10px;
+
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}
+
+.philosophy-bottom-text {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.4;
+  text-align: center;
+  color: #fffdf7;
+
+  @include media(desktop) {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
+
+.philosophy-br {
+  display: none;
+
+  @include media(desktop) {
+    display: inline;
+  }
+}
