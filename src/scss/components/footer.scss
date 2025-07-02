@@ -1,211 +1,102 @@
 .footer {
-  background: #0c1018;
+  background: #3e3a36;
+  padding: 40px 0;
+
+  @include media(desktop) {
+    padding: 48px 0;
+  }
 }
 
 .footer-container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 
   @include media(desktop) {
-    padding-right: 177px;
+    flex-direction: row;
+    align-items: end;
   }
 }
 
-.footer-top-wrapper {
-  padding-top: 32px;
-  padding-bottom: 40px;
+.footer-address {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 277px;
 
   @include media(desktop) {
-    padding-top: 80px;
-    padding-bottom: 47px;
-    position: relative;
+    order: 2;
+    margin-bottom: 0;
   }
 }
 
-.footer-bottom-wrapper {
-  border-top: 2px solid #a3e635;
-  padding-top: 31px;
-  padding-bottom: 30px;
+.footer-address-text-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
 
-  @include media(desktop) {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
+.footer-address-link {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  color: #fffdf7;
 }
 
 .footer-nav {
+  margin-bottom: 32px;
+
   @include media(desktop) {
-    position: absolute;
-    top: 80px;
-    left: 50%;
-    transform: translateX(-50%);
+    margin-bottom: 0;
+    order: 3;
   }
 }
 
 .footer-list {
   display: flex;
-  flex-direction: column;
-  align-items: start;
-  gap: 20px;
-
-  @include media(desktop) {
-    gap: 24px;
-  }
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
 }
 
 .footer-link {
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  color: #f1f5f9;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #fffdf7;
   transition: all 0.3s ease-in-out;
-
-  @include media(desktop) {
-    font-size: 18px;
-  }
 
   &:hover,
   &:focus {
   }
 }
 
-.footer-contacts-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-
-  @include media(desktop) {
-    flex-direction: row;
-    gap: 0;
-    justify-content: space-between;
-    width: 100%;
-  }
-}
-
-.footer-text-wrapper {
-  border: 0.72px solid #a3e635;
-  border-radius: 14px;
-  padding: 6.5px 11px;
-  max-width: 148px;
-
-  @include media(desktop) {
-    border: 2px solid #a3e635;
-    border-radius: 40px;
-    padding: 63px 60.5px;
-    max-width: 411px;
-  }
-}
-
 .footer-text {
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  font-size: 8px;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
   text-align: center;
-  color: #f1f5f9;
+  color: #fffdf7;
 
   @include media(desktop) {
-    font-size: 20px;
+    order: 1;
   }
 }
 
-.footer-address-wrapper {
-}
-
-.footer-contacts-subtitle {
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  color: #f1f5f9;
-  margin-bottom: 20px;
-
+.footer-br {
   @include media(desktop) {
-    font-size: 18px;
-    margin-bottom: 40px;
-  }
-}
-
-.footer-email-wrapper {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-
-  @include media(desktop) {
-    display: block;
-    max-width: 205px;
-  }
-}
-
-.footer-email-text {
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  color: rgba(241, 245, 249, 0.7);
-
-  @include media(desktop) {
-    font-size: 18px;
-  }
-}
-
-.footer-email-link {
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  color: rgba(241, 245, 249, 0.7);
-
-  @include media(desktop) {
-    font-size: 18px;
-  }
-}
-
-.footer-remote-text {
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  color: rgba(241, 245, 249, 0.7);
-  margin-bottom: 20px;
-
-  @include media(desktop) {
-    font-size: 18px;
-  }
-}
-
-.footer-socials-wrapper {
-  display: flex;
-  align-items: center;
-}
-
-.footer-socials-link {
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  font-size: 12px;
-  color: #f1f5f9;
-
-  @include media(desktop) {
-    font-size: 18px;
+    display: none;
   }
 }
 
 .footer-span {
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  font-size: 12px;
-  color: #f1f5f9;
+  display: none;
 
   @include media(desktop) {
-    font-size: 18px;
-  }
-}
-
-.footer-bottom-text {
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  font-size: 10px;
-  text-align: center;
-  color: #f1f5f9;
-  margin-left: auto;
-  margin-right: auto;
-
-  @include media(desktop) {
-    font-size: 20px;
+    display: inline;
   }
 }
